@@ -1,4 +1,4 @@
 set /P name=
-java -jar bin\BF2OC.jar source\%name%.bf c-source\%name%.c 20000 50
-gcc -o %name% c-source\%name%.c
+java BfToC.java source\%name%.bf c-source\%name%.c
+gcc -O0 -g -o %name% c-source\%name%.c
 PAUSE
